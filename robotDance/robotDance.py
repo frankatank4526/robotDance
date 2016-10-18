@@ -74,8 +74,6 @@ def danceMove8():#opposite of move7
 
 
 
-
-#from 1:10 of video (precisely 1:10)
 turnLeft(4.9,.5)
 wait(.5)
 turnRight(4.9,.5)#1 second of build up
