@@ -1,32 +1,32 @@
 from Myro import *
 init ("sim")
-def danceMove1():#movement right,comes back to origin
+def moveRight():#movement right,comes back to origin
     forward(3,1)
     turnBy(180)
     forward(3,1)
     turnBy(180)
     
-def danceMove2():#movement left
+def moveLeft():#movement left
     turnBy(180)
     forward(3,1)
     turnBy(180)
     forward(3,1)
     
-def danceMove3():#upward,sprins turns back
+def moveUp():#upward,sprins turns back
     turnBy(90)
     forward(3,1)
     turnBy(180)
     forward(3,1)
     turnBy(270)
 
-def danceMove4():#downward, spins turns back
+def moveDown():#downward, spins turns back
     turnBy(270)
     forward(3,1)
     turnBy(180)
     forward(3,1)
     turnBy(90)
 
-def danceMove5():#upward spin turnback leftward spin turnback etc.
+def upLoop():#upward spin turnback leftward spin turnback etc.
     x = 1
     while x < 5:
         turnBy(2.45)
@@ -37,7 +37,7 @@ def danceMove5():#upward spin turnback leftward spin turnback etc.
         
         x = x+1
         
-def danceMove6():#dancemove5, but opposite direction
+def downLoop():#dancemove5, but opposite direction
     x = 1
     while x < 5:
         turnLeft(7.35,1)
@@ -49,7 +49,7 @@ def danceMove6():#dancemove5, but opposite direction
         x = x+1
 
         
-def danceMove7():#diagonal variation
+def diagonalLoop1():#diagonal variation
     x = 1
     while x < 5:
         turnLeft(1.3,1)
@@ -60,7 +60,7 @@ def danceMove7():#diagonal variation
         
         x = x+1
         
-def danceMove8():#opposite of move7
+def diagonalLoop2():#opposite of move7
     x = 1
     while x < 5:
         turnRight(1.3,1)
@@ -81,12 +81,12 @@ wait(.5)
 turnRight(4.9,.5)
 turnLeft(4.9,5)
 wait(1)
-danceMove5()
-danceMove7()
-danceMove5()
+upLoop()
+diagonalLoop1()
+upLoop()
 wait(1)
-danceMove4()
-danceMove6()
-danceMove8()
-danceMove6()
+moveDown()
+downLoop()
+diagonalLoop2()
+downLoop()
     
