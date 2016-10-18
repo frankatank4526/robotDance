@@ -80,6 +80,7 @@ turnRight(4.9,.5)#1 second of build up
 wait(.5)
 turnRight(4.9,.5)
 turnLeft(4.9,5)
+wait(1)
 danceMove5()
 danceMove7()
 danceMove5()
@@ -88,5 +89,4 @@ danceMove4()
 danceMove6()
 danceMove8()
 danceMove6()
-wait(1)
     
