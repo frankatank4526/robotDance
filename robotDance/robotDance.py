@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 from Myro import *
 init ("sim")
 def moveRight():#movement right,comes back to origin
@@ -93,4 +91,4 @@ downLoop()
 diagonalLoop2()
 downLoop()
     
->>>>>>> Tej
+
