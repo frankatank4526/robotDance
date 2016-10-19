@@ -27,8 +27,8 @@ def moveDown():#downward, spins turns back
     turnBy(90)
 
 def upLoop():#upward spin turnback leftward spin turnback etc.
-    x = 1
-    while x < 5:
+    x = 0
+    for x in range(4):
         turnBy(2.45)
         forward(1,.5)
         turnLeft(4.9,1)
@@ -36,38 +36,39 @@ def upLoop():#upward spin turnback leftward spin turnback etc.
         backward(1,.5)
         
         x = x+1
+
         
 def downLoop():#dancemove5, but opposite direction
-    x = 1
-    while x < 5:
+    x = 0
+    for x in range(4):
         turnLeft(7.35,1)
-        forward(3,1)
+        forward(2,1)
         turnRight(4.9,1)
         turnRight(4.9,1)
-        backward(3,1)
+        backward(2,1)
         
         x = x+1
 
         
 def diagonalLoop1():#diagonal variation
-    x = 1
-    while x < 5:
+    x = 0
+    for x in range(4):
         turnLeft(1.3,1)
-        forward(3,.5)
+        forward(2,.5)
         turnLeft(4.9,1)
         turnLeft(4.9,1)
-        backward(3,1)
+        backward(2,1)
         
         x = x+1
         
 def diagonalLoop2():#opposite of move7
-    x = 1
-    while x < 5:
+    x = 0
+    for x in range(4):
         turnRight(1.3,1)
-        forward(3,.5)
+        forward(2,.5)
         turnRight(4.9,1)
         turnRight(4.9,1)
-        backward(3,1)
+        backward(2,1)
         x = x+1
         
 #HOLY MOLY ITS ACTUAL MOVEMENTS IN ACTION NOW
